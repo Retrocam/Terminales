@@ -26,7 +26,7 @@ public class FillPaymentMethodForm implements Task {
                 Enter.theValue(user.getPHONE()).into(checkoutUI.TXT_PHONE_PSE),
                 Enter.theValue(user.getID()).into(checkoutUI.TXT_IDCARD_PSE),
                 Enter.theValue(user.getEMAIL()).into(checkoutUI.TXT_EMAIL_PSE),
-                //JavaScriptClick.on(checkoutUI.BTN_TYC_EPAYCO),
+                JavaScriptClick.on(checkoutUI.BTN_TYC_EPAYCO),
                 WaitUntil.the(checkoutUI.BTN_BUY_NOW, isEnabled()).forNoMoreThan(30).seconds(),
                 JavaScriptClick.on(checkoutUI.BTN_BUY_NOW),
                 WaitUntil.the(checkoutUI.BTN_CLOSE_PAGE, isClickable()).forNoMoreThan(30).seconds(),

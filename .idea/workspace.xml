@@ -4,45 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15df59bd-8f63-4ac6-b200-a2d0054eebb4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/serenity.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/questions/TextValidations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/AddToCart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FillAddressForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FillPaymentMethodForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FillPersonalDataForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FindAvailable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/userInterfaces/CartUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/userInterfaces/CheckoutUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/userInterfaces/HomeUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/userInterfaces/PDPUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/utils/DataExcel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/utils/Excel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/utils/Global.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/utils/JsMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/utils/UserData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Data/UserData.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/runners/AddCartRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/runners/AvailabilityRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/runners/CheckoutRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/AddCartStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/AvailabilityStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/CheckoutStepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/addCart.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/availability.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/checkout.feature" afterDir="false" />
+    <list default="true" id="15df59bd-8f63-4ac6-b200-a2d0054eebb4" name="Changes" comment="First commit,  flow handling Excel file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FillPaymentMethodForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FillPaymentMethodForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/utils/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/utils/Global.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/utils/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/utils/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Data/UserData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Data/UserData.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,6 +189,14 @@
       <option name="presentableId" value="Default" />
       <updated>1700070006243</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit,  flow handling Excel file">
+      <created>1706817544651</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706817544651</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,5 +221,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit,  flow handling Excel file" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit,  flow handling Excel file" />
   </component>
 </project>
