@@ -17,9 +17,9 @@ public class AddToCart implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        Global.PRODUCT_NAME = pdpui.TXT_PRODUCT_NAME.resolveFor(actor).getTextContent().substring(1);
-        Global.PRODUCT_PRICE = pdpui.TXT_PRODUCT_PRICE.resolveFor(actor).getText().substring(2);
-        System.out.println(Global.PRODUCT_NAME+" price: "+ Global.PRODUCT_PRICE);
+        Global.Product_name = pdpui.TXT_PRODUCT_NAME.resolveFor(actor).getTextContent().substring(1);
+        Global.Product_price = pdpui.TXT_PRODUCT_PRICE.resolveFor(actor).getText().substring(2);
+        System.out.println(Global.Product_name +" price: "+ Global.Product_price);
         JsMethods.scrollByPx(actor,550);
         actor.attemptsTo(
                 WaitUntil.the(pdpui.BTN_BUYNOW, isClickable()).forNoMoreThan(10).seconds(),

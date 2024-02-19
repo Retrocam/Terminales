@@ -37,7 +37,7 @@ public class CheckoutStepDefinition {
     public void i_verify_the_number_order_is_not_null() {
 
         String order = checkoutUI.LBL_ORDER_NUMBER.resolveFor(OnStage.theActorInTheSpotlight()).getTextContent() ;
-        //System.out.println(PRODUCT_NAME);
+        //System.out.println(Product_name);
         System.out.println("The order number is: "+order);
 
 

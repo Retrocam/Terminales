@@ -1,6 +1,7 @@
 package co.com.movistar.tasks;
 
 import co.com.movistar.userInterfaces.CheckoutUI;
+import co.com.movistar.utils.DataExcel;
 import co.com.movistar.utils.UserData;
 import net.serenitybdd.core.steps.Instrumented;
 import net.serenitybdd.screenplay.Actor;
@@ -19,20 +20,42 @@ public class FillAddressForm implements Task {
     public <T extends Actor> void performAs(T actor) {
         CheckoutUI checkoutUI = new CheckoutUI();
         UserData user = UserData.USER_1;
+        DataExcel user2 = new DataExcel();
+
+        if (true){
+            System.out.println(user2.getTYPE());
+            System.out.println("entré 1");
+            System.out.println(user2.getTYPE()!= null);
+
+        }
+
         actor.attemptsTo(
                 Click.on(checkoutUI.TXT_EDIT_ADDRESS),
-                (Performable) SelectFromOptions.byValue(user.getSTREET_VALUE()).from(checkoutUI.LST_ADDRESS),
-                Enter.theValue(user.getADDRESS1()).into(checkoutUI.TXT_ADDRESS_1),
-                Enter.theValue(user.getADDRESS2()).into(checkoutUI.TXT_ADDRESS_2),
-                Enter.theValue(user.getADDRESS_PLATE()).into(checkoutUI.TXT_ADRESS_PLATE),
+                SelectFromOptions.byValue(user2.getSTREET_VALUE()).from(checkoutUI.LST_ADDRESS),
+                //Enter.theValue(user.getADDRESS1()).into(checkoutUI.TXT_ADDRESS_1),
+                Enter.theValue(user2.getADDRESS1()).into(checkoutUI.TXT_ADDRESS_1),
+                Enter.theValue(user2.getADDRESS2()).into(checkoutUI.TXT_ADDRESS_2),
+                Enter.theValue(user2.getADDRESS_PLATE()).into(checkoutUI.TXT_ADRESS_PLATE),
                 WaitUntil.the(checkoutUI.LST_NEIGHBORHOOD, isEnabled() ).forNoMoreThan(60).seconds(),
-                (Performable) SelectFromOptions.byValue(user.getNEIGHBORHOOD_VALUE()).from(checkoutUI.LST_NEIGHBORHOOD),
+                SelectFromOptions.byValue(user2.getNEIGHBORHOOD_VALUE()).from(checkoutUI.LST_NEIGHBORHOOD),
                 Click.on(checkoutUI.BTN_CONTINUE_ADDRESS),
                 WaitUntil.the(checkoutUI.BTN_RADIO_CHECK_ADDRESS, isClickable() ).forNoMoreThan(10).seconds(),
                 Click.on(checkoutUI.BTN_RADIO_CHECK_ADDRESS),
-                Click.on(checkoutUI.BTN_CONFIRM_ADDRESS),
+                Click.on(checkoutUI.BTN_CONFIRM_ADDRESS)
+        );
+        if (user2.getTYPE()!= null){
+            System.out.println("entré");
+            /*
+            actor.attemptsTo(
+                    SelectFromOptions.byValue(user2.getNEIGHBORHOOD_VALUE()).from(checkoutUI.LST_NEIGHBORHOOD)
+            )*/
+        }
+
+                //implementar un if para verificar si tiene complentos y no fallar la automatizacion
+        actor.attemptsTo(
+
                 Click.on(checkoutUI.BTN_SECOND_CONFIRM),
-                Enter.theValue(user.getADDRESS_COMPLEMENT()).into(checkoutUI.TXT_COMPLEMENT)
+                Enter.theValue(user2.getADDRESS_COMPLEMENT()).into(checkoutUI.TXT_COMPLEMENT)
 
         );
     }

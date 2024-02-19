@@ -27,12 +27,12 @@ public class AddCartStepDefinition {
     @Then("I validate the name of the product")
     public void i_validate_the_name_of_the_product() {
         theActorInTheSpotlight().should(GivenWhenThen.seeThat(TextValidations.textValidations(cartUI.TXT_CART_PRODUCT_NAME),
-                Matchers.containsString(Global.PRODUCT_NAME)));
+                Matchers.containsString(Global.Product_name)));
     }
     @Then("I validate the price of the product")
     public void i_validate_the_price_of_the_product() {
         theActorInTheSpotlight().should(GivenWhenThen.seeThat(TextValidations.textValidations(cartUI.TXT_CART_PRODUCT_PRICE),
-                Matchers.containsString(Global.PRODUCT_PRICE)));
+                Matchers.containsString(Global.Product_price)));
     }
 
 }
