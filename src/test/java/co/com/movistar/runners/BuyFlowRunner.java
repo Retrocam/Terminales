@@ -6,10 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/checkout.feature",
+        features = "src/test/resources/features/buyFlow.feature",
         glue = "co.com.movistar.stepsDefinitions",
         snippets =  CucumberOptions.SnippetType.CAMELCASE,
         plugin = {"pretty"}
 )
-public class CheckoutRunner {
+public class BuyFlowRunner {
 }

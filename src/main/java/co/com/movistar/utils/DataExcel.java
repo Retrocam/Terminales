@@ -23,14 +23,14 @@ public class DataExcel {
     private String ID = testData.get(numrandom).get("Cedula");
 
 
-    private String ADDRESS1 = addressData.get(0).get("Calle");
-    private String ADDRESS2 = addressData.get(0).get("Numero");
-    private String ADDRESS_PLATE = addressData.get(0).get("Placa");
-    private String STREET_VALUE = addressData.get(0).get("Cod_Calle");
-    private String NEIGHBORHOOD_VALUE = addressData.get(0).get("Cod_Barrio");
-    private String ADDRESS_COMPLEMENT = addressData.get(0).get("Complemento");
-    private String TYPE = addressData.get(0).get("Tipo");
-    private String Detail = addressData.get(0).get("Detalle");
+    private String ADDRESS1 = addressData.get(numrandom).get("Calle");
+    private String ADDRESS2 = addressData.get(numrandom).get("Numero");
+    private String ADDRESS_PLATE = addressData.get(numrandom).get("Placa");
+    private String STREET_VALUE = addressData.get(numrandom).get("Cod_Calle");
+    private String NEIGHBORHOOD_VALUE = addressData.get(numrandom).get("Cod_Barrio");
+    private String ADDRESS_COMPLEMENT = addressData.get(numrandom).get("Complemento");
+    private String TYPE = addressData.get(numrandom).get("Tipo");
+    private String Detail = addressData.get(numrandom).get("Detalle");
 
 
 

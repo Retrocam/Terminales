@@ -13,7 +13,7 @@ import org.hamcrest.Matchers;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
-public class CheckoutStepDefinition {
+public class BuyFlowStepDefinition {
     CheckoutUI checkoutUI = new CheckoutUI();
 
 

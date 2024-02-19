@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15df59bd-8f63-4ac6-b200-a2d0054eebb4" name="Changes" comment="ajustes">
+    <list default="true" id="15df59bd-8f63-4ac6-b200-a2d0054eebb4" name="Changes" comment="Manejo de data aleatoria con excel">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/buyFlow.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/AddToCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/AddToCart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FillAddressForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FillAddressForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/userInterfaces/CheckoutUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/userInterfaces/CheckoutUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/userInterfaces/HomeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/userInterfaces/HomeUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/utils/DataExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/utils/DataExcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/utils/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/utils/Global.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Data/UserData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Data/UserData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/AddCartStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/AddCartStepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/CheckoutStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/CheckoutStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/movistar/runners/CheckoutRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/runners/BuyFlowRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/CheckoutStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/BuyFlowStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/checkout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/delete.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,27 +57,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.CheckoutRunner">
-    <configuration name="Scenario: Add to cart succesfully (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/checkout.feature" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Terminales.test" />
-      <option name="NAME_FILTER" value="^Add to cart succesfully$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Add to cart succesfully$&quot;" />
-      <shortenClasspath name="MANIFEST" />
-      <option name="SUGGESTED_NAME" value="Scenario: Add to cart succesfully" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.BuyFlowRunner">
     <configuration name="Scenario: Fill the form succesfully" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/checkout.feature" />
@@ -150,6 +132,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="BuyFlowRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;co.com.movistar.runners.BuyFlowRunner&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="CheckoutRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -175,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BuyFlowRunner" />
         <item itemvalue="Gradle.CheckoutRunner" />
         <item itemvalue="Cucumber Java.Scenario: Fill the form succesfully" />
         <item itemvalue="Gradle.AddCartRunner" />
         <item itemvalue="Gradle.AvailabilityRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Add to cart succesfully (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706819058079</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Manejo de data aleatoria con excel">
+      <created>1708362003820</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708362003820</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +247,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit,  flow handling Excel file" />
     <MESSAGE value="ajustes" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajustes" />
+    <MESSAGE value="Manejo de data aleatoria con excel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Manejo de data aleatoria con excel" />
   </component>
 </project>

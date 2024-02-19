@@ -31,12 +31,13 @@ public class CheckoutUI {
             .locatedBy("//input[@id=\"placa\"]");
     public final Target BTN_CONTINUE_ADDRESS = Target.the("continue address form")
             .located(By.id("ver-cobertura"));
-    /*
-    public final Target BTN_RADIO_CHECK_ADDRESS = Target.the("radio button confirm address")
-            .located(By.id("dir0"));*/
+
+
 
     public final Target BTN_RADIO_CHECK_ADDRESS = Target.the("radio button confirm address")
             .locatedBy("//div[@class=\"c-form__radio c-form__radio_border dirRadio direccionTL\"]");
+    public final Target LST_TYPE = Target.the("Type of address").located(By.id("tipo"));
+    public final Target LST_DETAIL = Target.the("Detail of address").located(By.id("detalle"));
     public final Target BTN_CONFIRM_ADDRESS = Target.the("button confirm address")
             .locatedBy("//button[@class=\"selectAddress o-btn o-btn_w255 o-btn_height56 o-btn_height40_mb o-message__btn\"]");
     public final Target BTN_SECOND_CONFIRM = Target.the("Second button confirm address")

@@ -22,12 +22,7 @@ public class FillAddressForm implements Task {
         UserData user = UserData.USER_1;
         DataExcel user2 = new DataExcel();
 
-        if (true){
-            System.out.println(user2.getTYPE());
-            System.out.println("entré 1");
-            System.out.println(user2.getTYPE()!= null);
 
-        }
 
         actor.attemptsTo(
                 Click.on(checkoutUI.TXT_EDIT_ADDRESS),
@@ -42,16 +37,15 @@ public class FillAddressForm implements Task {
                 WaitUntil.the(checkoutUI.BTN_RADIO_CHECK_ADDRESS, isClickable() ).forNoMoreThan(10).seconds(),
                 Click.on(checkoutUI.BTN_RADIO_CHECK_ADDRESS),
                 Click.on(checkoutUI.BTN_CONFIRM_ADDRESS)
+
         );
         if (user2.getTYPE()!= null){
-            System.out.println("entré");
-            /*
             actor.attemptsTo(
-                    SelectFromOptions.byValue(user2.getNEIGHBORHOOD_VALUE()).from(checkoutUI.LST_NEIGHBORHOOD)
-            )*/
+                    SelectFromOptions.byValue(user2.getTYPE()).from(checkoutUI.LST_TYPE),
+                    SelectFromOptions.byValue(user2.getDetail()).from(checkoutUI.LST_DETAIL)
+            );
         }
 
-                //implementar un if para verificar si tiene complentos y no fallar la automatizacion
         actor.attemptsTo(
 
                 Click.on(checkoutUI.BTN_SECOND_CONFIRM),
