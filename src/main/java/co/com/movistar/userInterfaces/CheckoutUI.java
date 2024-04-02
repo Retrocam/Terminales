@@ -15,25 +15,27 @@ public class CheckoutUI {
             .locatedBy("//input[@id=\"numberphone\"]");
     public final Target TXT_IDCARD = Target.the("cc personal form")
             .locatedBy("//input[@id=\"document\"]");
-    public final Target BTN_CONTINUE = Target.the("continue personal form")
+    public final Target BTN_CONTINUE = Target.the("continue botton")
             .locatedBy("//button[@id=\"continuarBtn\"]");
 
    //Address
 
-    public final Target TXT_EDIT_ADDRESS = Target.the("Edit address")
-           .locatedBy("//div[@class=\"check-container-items\"]");
+    public final Target DEPARTMENT = Target.the(" Departments List")
+           .located(By.id("select2-departamento-container"));
+    public final Target SEARCH_DEPARTMENT = Target.the("Search bar")
+            .locatedBy("//input[@class=\"select2-search__field\"]");
+    public final Target DEPARTMENT_SELECTED = Target.the(" Bogota")
+            .locatedBy("//*[substring(@id, string-length(@id) - string-length('-1486464778355100001')+1) = '-1486464778355100001']");
     public final Target LST_NEIGHBORHOOD = Target.the("neighborhood")
             .locatedBy("//select[@id=\"barrio\"]");
-    public final Target LST_ADDRESS = Target.the("address").located(By.id("direccion"));
+    public final Target LST_ADDRESS = Target.the("address").located(By.id("tipoDireccion"));
     public final Target TXT_ADDRESS_1 = Target.the("num1").located(By.id("numone"));
-    public final Target TXT_ADDRESS_2 = Target.the("num2").located(By.id("numeroSecundario"));
+    public final Target TXT_ADDRESS_2 = Target.the("num2").located(By.id("numtwo"));
     public final Target TXT_ADRESS_PLATE = Target.the("plate")
             .locatedBy("//input[@id=\"placa\"]");
     public final Target BTN_CONTINUE_ADDRESS = Target.the("continue address form")
             .located(By.id("ver-cobertura"));
-
-
-
+    //
     public final Target BTN_RADIO_CHECK_ADDRESS = Target.the("radio button confirm address")
             .locatedBy("//div[@class=\"c-form__radio c-form__radio_border dirRadio direccionTL\"]");
     public final Target LST_TYPE = Target.the("Type of address").located(By.id("tipo"));

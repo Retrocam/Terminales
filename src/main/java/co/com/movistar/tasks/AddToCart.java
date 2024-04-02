@@ -11,6 +11,7 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClickable;
+import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class AddToCart implements Task {
     PDPUI pdpui = new PDPUI();
@@ -20,9 +21,9 @@ public class AddToCart implements Task {
         Global.Product_name = pdpui.TXT_PRODUCT_NAME.resolveFor(actor).getTextContent().substring(1);
         Global.Product_price = pdpui.TXT_PRODUCT_PRICE.resolveFor(actor).getText().substring(2);
         System.out.println(Global.Product_name +" price: "+ Global.Product_price);
-        JsMethods.scrollByPx(actor,550);
+        //JsMethods.scrollByPx(actor,500);
         actor.attemptsTo(
-                WaitUntil.the(pdpui.BTN_BUYNOW, isClickable()).forNoMoreThan(10).seconds(),
+                WaitUntil.the(pdpui.BTN_BUYNOW, isVisible()).forNoMoreThan(30).seconds(),
                 Click.on(pdpui.BTN_BUYNOW)
 
         );
