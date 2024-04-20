@@ -23,7 +23,7 @@ dependencies {
     implementation 'net.serenity-bdd:serenity-screenplay:3.2.0'
     implementation "net.serenity-bdd:serenity-cucumber:3.2.0"
     testImplementation 'org.slf4j:slf4j-simple:1.7.7'
-    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.5.3'
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.8.0'
     //implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.12.1'
 
     //Para Excel
@@ -36,6 +36,8 @@ dependencies {
     testCompileOnly 'org.projectlombok:lombok:1.18.20'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
 }
+//defaultTasks 'clean', 'test', 'aggregate'
+
 
 test {
     ignoreFailures = true

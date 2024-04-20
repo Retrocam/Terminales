@@ -5,6 +5,7 @@ import co.com.movistar.tasks.FindAvailable;
 import co.com.movistar.userInterfaces.PDPUI;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
@@ -22,7 +23,8 @@ public class AvailabilityStepDefinition {
     }
     @Given("I am in movistar.com")
     public void i_am_in_movistar_com() {
-        theActorCalled("Buyer").wasAbleTo(Open.url("https://tienda.movistar.com.co/"));
+        WebDriverManager.chromedriver().clearDriverCache().setup();//elimina cache
+        theActorCalled("Buyer").wasAbleTo(Open.url("https://tienda.movistar.com.co/celulares.html")); //usar una variable con el excel
     }
     @When("I select a product")
     public void i_select_a_product() {

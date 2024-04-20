@@ -16,7 +16,7 @@ public class DataExcel {
     public List<Map<String, String>> testData = Excel.readData("User");
     public List<Map<String, String>> addressData = Excel.readData("Direccion");
     public List<Map<String, String>> paymentData = Excel.readData("Epayco");
-
+//plugin sonarlint, verificar codigo duplicado
 
     private String EMAIL = testData.get(numrandom).get("Email");
     private String NAME = testData.get(numrandom).get("Nombre");
