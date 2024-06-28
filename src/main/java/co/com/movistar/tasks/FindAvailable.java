@@ -17,10 +17,7 @@ public class FindAvailable implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         JsMethods.scrollByPx(actor,650);
-        //List <WebElementFacade>  devicesList = (List<WebElementFacade>) homeUI.BTN_PRODUCT.resolveFor(actor);
-
         actor.attemptsTo(
-
                 Click.on(homeUI.BTN_PRODUCT)
         );
 

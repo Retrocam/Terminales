@@ -10,9 +10,7 @@ public class BuyFlowWithRandom {
     //CheckoutUI checkoutUI = new CheckoutUI();
     @When("I select a random product")
     public void i_select_a_random_product() {
-        System.out.println("entre xxxxxxxxxxx");
         OnStage.theActorInTheSpotlight().attemptsTo(SelectRandom.inMovistar());
-
     }
 
 }

@@ -4,17 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15df59bd-8f63-4ac6-b200-a2d0054eebb4" name="Changes" comment="Manejo de data aleatoria con excel">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/buyFlow.feature" afterDir="false" />
+    <list default="true" id="15df59bd-8f63-4ac6-b200-a2d0054eebb4" name="Changes" comment="Manejo de dirección con complementos">
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/SearchProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/runners/BrandsRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/runners/SearchProductRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/BuyFlowBrands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/SearchProductStepDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/brands.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/searchProduct.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FillAddressForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FillAddressForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/AddToCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/AddToCart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FillPaymentMethodForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FillPaymentMethodForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FillPersonalDataForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FillPersonalDataForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FindAvailable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/FindAvailable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/SelectRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/SelectRandom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/userInterfaces/CheckoutUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/userInterfaces/CheckoutUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/userInterfaces/HomeUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/userInterfaces/HomeUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/userInterfaces/PDPUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/userInterfaces/PDPUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/com/movistar/utils/DataExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/movistar/utils/DataExcel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Data/UserData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Data/UserData.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/movistar/runners/CheckoutRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/runners/BuyFlowRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/CheckoutStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/BuyFlowStepDefinition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/checkout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/delete.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/AvailabilityStepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/AvailabilityStepDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/BuyFlowWithRandom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/BuyFlowWithRandom.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +36,16 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -35,7 +55,18 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="PrePro" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/build.gradle" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/co/com/movistar/questions/TextValidations.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/co/com/movistar/tasks/SelectRandom.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/co/com/movistar/utils/Excel.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,6 +79,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -57,17 +89,37 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.BuyFlowRunner">
-    <configuration name="Scenario: Fill the form succesfully" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Gradle.SearchProductRunner">
+    <configuration name="Feature: searchProduct" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/checkout.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/searchProduct.feature" />
       <option name="GLUE" value="net.serenitybdd.cucumber.actors co.com.movistar.stepsDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Terminales.test" />
-      <option name="NAME_FILTER" value="^Fill the form succesfully$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Fill the form succesfully$&quot;" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <shortenClasspath name="MANIFEST" />
-      <option name="SUGGESTED_NAME" value="Scenario: Fill the form succesfully" />
+      <option name="SUGGESTED_NAME" value="Feature: searchProduct" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: search a producto in movistar using the search bar" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/searchProduct.feature" />
+      <option name="GLUE" value="net.serenitybdd.cucumber.actors co.com.movistar.stepsDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Terminales.test" />
+      <option name="NAME_FILTER" value="^search a producto in movistar using the search bar$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^search a producto in movistar using the search bar$&quot;" />
+      <shortenClasspath name="MANIFEST" />
+      <option name="SUGGESTED_NAME" value="Scenario: search a producto in movistar using the search bar" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -86,7 +138,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AddCartRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BrandsRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -99,7 +151,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;co.com.movistar.runners.AddCartRunner&quot;" />
+            <option value="&quot;co.com.movistar.runners.BrandsRunner&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -109,7 +161,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AvailabilityRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BuyFlowRandomRunner (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -122,7 +174,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;co.com.movistar.runners.AvailabilityRunner&quot;" />
+            <option value="&quot;co.com.movistar.runners.BuyFlowRandomRunner&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -132,7 +184,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="BuyFlowRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SearchProductRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -145,30 +197,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;co.com.movistar.runners.BuyFlowRunner&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CheckoutRunner" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;co.com.movistar.runners.CheckoutRunner&quot;" />
+            <option value="&quot;co.com.movistar.runners.SearchProductRunner&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -180,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.BuyFlowRunner" />
-        <item itemvalue="Gradle.CheckoutRunner" />
-        <item itemvalue="Cucumber Java.Scenario: Fill the form succesfully" />
-        <item itemvalue="Gradle.AddCartRunner" />
-        <item itemvalue="Gradle.AvailabilityRunner" />
+        <item itemvalue="Gradle.SearchProductRunner" />
+        <item itemvalue="Cucumber Java.Scenario: search a producto in movistar using the search bar" />
+        <item itemvalue="Cucumber Java.Feature: searchProduct" />
+        <item itemvalue="Gradle.BuyFlowRandomRunner (1)" />
+        <item itemvalue="Gradle.BrandsRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -249,5 +278,29 @@
     <MESSAGE value="ajustes" />
     <MESSAGE value="Manejo de data aleatoria con excel" />
     <option name="LAST_COMMIT_MESSAGE" value="Manejo de data aleatoria con excel" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/co/com/movistar/stepsDefinitions/AddCartStepDefinition.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/co/com/movistar/runners/BuyFlowRandomRunner.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/co/com/movistar/runners/BuyFlowRunner.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Terminales$BuyFlowRandomRunner__1_.ic" NAME="BuyFlowRandomRunner (1) Coverage Results" MODIFIED="1713634462194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

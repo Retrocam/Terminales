@@ -16,7 +16,8 @@ public class DataExcel {
     public List<Map<String, String>> testData = Excel.readData("User");
     public List<Map<String, String>> addressData = Excel.readData("Direccion");
     public List<Map<String, String>> paymentData = Excel.readData("Epayco");
-//plugin sonarlint, verificar codigo duplicado
+
+    public List<Map<String, String>> enviroments = Excel.readData("Ambiente");
 
     private String EMAIL = testData.get(numrandom).get("Email");
     private String NAME = testData.get(numrandom).get("Nombre");
@@ -33,7 +34,11 @@ public class DataExcel {
     private String TYPE = addressData.get(numrandom).get("Tipo");
     private String DETAIL = addressData.get(numrandom).get("Detalle");
 
-    private String BANK_VALUE = paymentData.get(0).get("Banco");
+
+
+    private String ENVIROMENT = enviroments.get(0).get("URL");
+
+    private String BANK_VALUE = ENVIROMENT.contains("integration")?paymentData.get(1).get("Banco"):paymentData.get(0).get("Banco");
 
 
 

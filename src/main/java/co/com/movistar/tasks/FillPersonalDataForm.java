@@ -28,12 +28,6 @@ public class FillPersonalDataForm implements Task {
                 //WaitUntil.the(checkoutUI.BTN_CONTINUE, isEnabled() ).forNoMoreThan(20).seconds(),
                 Click.on(cartUI.BTN_CONTINUE),
                 WaitUntil.the(checkoutUI.TXT_EMAIL, isClickable() ).forNoMoreThan(60).seconds(),
-                /*Enter.theValue(user.getEMAIL()).into(checkoutUI.TXT_EMAIL),
-                Enter.theValue(user.getNAME()).into(checkoutUI.TXT_NAME),
-                Enter.theValue(user.getLASTNAME()).into(checkoutUI.TXT_LASTNAME),
-                Enter.theValue(user.getPHONE()).into(checkoutUI.TXT_PHONE),
-                Enter.theValue(user.getID()).into(checkoutUI.TXT_IDCARD),*/
-
                 Enter.theValue(user.getEMAIL()).into(checkoutUI.TXT_EMAIL),
                 Enter.theValue(user.getNAME()).into(checkoutUI.TXT_NAME),
                 Enter.theValue(user.getLASTNAME()).into(checkoutUI.TXT_LASTNAME),

@@ -27,7 +27,6 @@ public class AddToCart implements Task {
                 Click.on(pdpui.BTN_BUYNOW)
 
         );
-        //JsMethods.scrollByPx(actor,350);
 
     }
     public static Performable inMovistar() {
